@@ -75,23 +75,28 @@ def read_csv():
 #used code (encoding='latin1') from https://stackoverflow.com/questions/49898909/reading-a-file-with-french-characters-in-python
     with open(FILE_NAME, encoding='latin1') as reader_file:
 ```
-3. __Capitalize First Letter for User-input City Names__ _Line 21-22_
+3. __Capitalize First Letter for User-input City Names__ _Line 21-22, 28_
 ```python
 #in case of user enter city name with first letter not capitalized https://www.geeksforgeeks.org/string-capitalize-python/
 departure_city = departure_city.capitalize()
 ```
-4. __Remvoe Spaces from User Inputs__ _Line 23-24_
+```python
+arrival_city = arrival_city.capitalize()
+```
+4. __Remvoe Spaces from User Inputs__ _Line 23-24, 29_
 ```python
 #in case of user include space in input https://www.journaldev.com/23763/python-remove-spaces-from-string
 departure_city = ''.join(departure_city.split())
 ```
-5. __Replace French characters__ _Line 25-30_
+```python
+arrival_city = ''.join(arrival_city.split())
+```
+5. __Replace French characters__ _Line 25-26, 30_
 ```python
 #in case of user input french character https://www.journaldev.com/23763/python-remove-spaces-from-string
 departure_city = departure_city.replace("é", "e")
-arrival_city = input("Where is your destination? Please enter the name of the city you are heading to. \n")
-arrival_city = arrival_city.capitalize()
-arrival_city = ''.join(arrival_city.split())
+```
+```python
 arrival_city = arrival_city.replace("é", "e")
 ```
 
