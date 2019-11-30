@@ -3,7 +3,6 @@
 You will submit a copy of this report on Quercus each week between now and the end of the project. Each team member will need to submit a copy, so that we can go back and see what you've done over time. Your project may (and probably will) change as you progress, and that's okay, but we want to be able to track that progression.
 
 ## __Team Members__
-
 #### Team Member A
 - __First Name:__ Mengyu
 - __Last Name:__ Wang
